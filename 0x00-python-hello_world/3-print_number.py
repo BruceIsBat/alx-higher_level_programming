@@ -1,3 +1,3 @@
 #!/usr/bii/python3
 number = 98
-print(f"{number} Battery street", end='')
+print(f"{number} Battery street\n")
