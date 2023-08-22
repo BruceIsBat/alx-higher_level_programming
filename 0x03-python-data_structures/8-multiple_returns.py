@@ -5,4 +5,4 @@ def multiple_returns(sentence):
     else:
         char = sentence[0]
         check = len(sentence), char
-        return(check)
+        return (check)
