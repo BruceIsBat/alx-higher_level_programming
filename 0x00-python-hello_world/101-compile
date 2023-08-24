@@ -1,0 +1,5 @@
+#!/bin/bash
+py_script = "$PYFILE"
+python3 -m py_compile "$py_script"
+compiled_script="${py_script}c"
+mv "__pycache__/$compiled_script" "$compiled_script"
