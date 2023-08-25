@@ -7,17 +7,14 @@ python_script="$PYFILE"
 echo "Compiling $python_script ..."
 python -m py_compile "$python_script"
 
-# Rename the compiled output to match the desired format
+# Get the compiled output filename
 compiled_script="${python_script}c"
-mv "__pycache__/$compiled_script" "$compiled_script"
-
-# Clean up the generated "__pycache__" directory
-rm -r "__pycache__"
 
 # Verify the content of the compiled output
 if cat "$compiled_script" | zgrep -q "Best School"; then
     echo "Content verified."
 else
     echo "Content verification failed."
+    exit 1
 fi
 
