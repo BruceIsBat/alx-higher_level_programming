@@ -11,3 +11,7 @@ def safe_print_division(a, b):
         else:
             result = None
             return("{}".format(result))
+
+
+if __name__ = "__main__":
+   safe_print_division(a, b)
