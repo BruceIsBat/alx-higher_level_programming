@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 al = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-print(f"{b}")
+print(al)
