@@ -6,4 +6,8 @@ def safe_print_division(a, b):
     except:
         print("Inside result: None")
     finally:
-        print("{} / {} = {}".format(a, b, result if 'result' in locals() else None))
+        if 'result' in locals():
+            return("{}".format(result))
+        else:
+            result = None
+            return("{}".format(result))
