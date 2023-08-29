@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 class Square:
     """
-    This is an empty class with no attributes or methods.
+    Square - A class that defines a square
 
-    This class can be used as a starting point for creating new classes
-    or as a placeholder for future development.
+    This class represents a square with no additional attributes or methods
 
     Attributes:
         None
