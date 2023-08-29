@@ -25,6 +25,7 @@ class Square():
         size: the size of the square sides defaults to 0
 
     """
+
     def __init__(self, size=0, position=(0, 0)):
         """The  __init__ method for the class Square.
 
@@ -33,7 +34,9 @@ class Square():
         Args:
             size: the size of the square sides defaults to 0
             position: tuple of default 0,0
-
+        Raises:
+            TypeError: If size or position is not an integer or tuple
+            ValueError: If size is negative.
         """
 
         if not isinstance(size, int):
@@ -49,7 +52,7 @@ class Square():
         The area of the square
 
         Returns:
-            area: the area of the square
+            int: the area of the square
         """
         area = self.__size
         return area * area
@@ -59,8 +62,8 @@ class Square():
 
         The area of the square
 
-        Returns:
-            area: the area of the square
+        Prints the square using the stored size and position attributes.
+        If size is 0, prints an empty line.
         """
         side = self.__size
         space = self.__position
@@ -85,7 +88,13 @@ class Square():
 
     @size.setter
     def size(self, value):
-        """Setter method for the size attribute"""
+        """Setter method for the size attribute
+        Args:
+            value (int): The new value for the size attribute.
+        Raises:
+            TypeError: If value is not an integer.
+            ValueError: If value is negative.
+        """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -99,7 +108,12 @@ class Square():
 
     @position.setter
     def position(self, value):
-        """Setter method for the position attribute"""
+        """Setter method for the position attribute
+        Args:
+            value (tuple): The new value for the position attribute.
+        Raises:
+            TypeError: If value is not a tuple of two positive integers.
+        """
         if isinstance(position, tuple) and len(position) == 2:
             if all(isinstance(x, int) and x > 0 for x in position):
                 return position
