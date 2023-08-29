@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""This module demostrates documentation and empty class
+"""
+
+
 class Square:
     """ Square - A class that defines a square
 
