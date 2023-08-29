@@ -6,6 +6,11 @@ def safe_print_list(my_list=[], x=0):
             print("{}".format(g), end=(""))
         print()
         return(g)
-    except:
+    except IndexError:
         print()
-        return(g)
+        return (g)
+    finally:
+        if 'g' in locals():
+            return (g)
+        else:
+            return (0)
