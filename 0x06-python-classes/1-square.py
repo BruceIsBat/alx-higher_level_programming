@@ -14,17 +14,19 @@ class Square():
         emp = Square()
 
     Attributes:
-        None
+        size: the size of the square sides
 
     Methods:
-        None
+        size: the size of the square sides
+    Args:
+        size: the size of the square sides
     """
     def __init__(self, size):
         """The  __init__ method for the class Square.
 
+        The init method takes in a protected parameter size
+
         Args:
             size: the size of the square sides
         """
-        self.__size = "I am protected"
-        """
-        Protected data"""
+        self.__size = size
