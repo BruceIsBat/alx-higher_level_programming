@@ -38,6 +38,9 @@ class Square():
             TypeError: If size or position is not an integer or tuple
             ValueError: If size is negative.
         """
+        if not isinstance(position, tuple) and len(position) != 2:
+            if not all(isinstance(x, int) and x > 0 for x in position):
+                raise TypeError("Position must be a tuple of 2 positive integers")
 
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
