@@ -1,12 +1,15 @@
 #!/usr/bin/python3
+""" This module converts two argument to int then add them
+"""
 def add_integer(a, b=98):
     """ The function to add two floats or integers
 
-    >>> add_integer(1, 2)
-    3
-    >>> add_integer(4, "School")
-    b must be an integer
-    
+    args:
+        param1: The first parameter.
+        param2: The second parameter.
+
+    Returns:
+        The return is the sum of the two
     """
 
     if not isinstance(a, (int, float)):
@@ -16,4 +19,4 @@ def add_integer(a, b=98):
     else:
         a = int(a)
         b = int(b)
-         return (a + b)
+        return (a + b)
