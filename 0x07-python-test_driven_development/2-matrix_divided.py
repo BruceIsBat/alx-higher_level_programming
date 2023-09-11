@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """This module contains a code to get a matrix and divisor
 """
+
+
 def matrix_divided(matrix, div):
     """This function divides a matrix and returns a new matrix
-
     Args:
         matrx: gets the matrix to be divided
         div: the divisor
-
     Returns:
         return a new divided matrix
     """
@@ -29,11 +29,9 @@ def matrix_divided(matrix, div):
                 new_index_list.append(mat_div)
         return new_matrix
     except TypeError as var:
-        print(var)
+        return(var)
     except ZeroDivisionError as e:
-        print(e)
-    except TypeError as a:
-        print(a)
+        return(e)
 
 
 if __name__ == "__main__":
