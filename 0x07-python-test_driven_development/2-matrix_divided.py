@@ -20,13 +20,13 @@ def matrix_divided(matrix, div):
         for mat_list in range(len(matrix)):
             new_index_list = []
             if len(matrix[mat_list]) != len(matrix[mat_list-1]):
-                raise TypeError("Each row of the matrix must" 
-" have the same size")
+                raise TypeError("Each row of the matrix must"
+                                " have the same size")
             new_matrix.append(new_index_list)
             for element in matrix[mat_list]:
                 if not isinstance(element, (int, float)):
-                    raise TypeError("matrix must be a matrix " 
-"(list of lists) of integers/floats")
+                    raise TypeError("matrix must be a matrix "
+                                    "(list of lists) of integers/floats")
                 mat_div = round(element/div, 2)
                 new_index_list.append(mat_div)
         return new_matrix
