@@ -31,9 +31,9 @@ def matrix_divided(matrix, div):
                 new_index_list.append(mat_div)
         return new_matrix
     except TypeError as var:
-        return(var)
+        return (var)
     except ZeroDivisionError as e:
-        return(e)
+        return (e)
 
 
 if __name__ == "__main__":
