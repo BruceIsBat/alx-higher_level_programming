@@ -1,0 +1,5 @@
+Tests
+>>> append_write = __import__('2-append_write').append_write
+>>> append_write("file_append.txt", "This School is so cool!\n")
+24
+>>> 
