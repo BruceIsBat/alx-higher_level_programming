@@ -1,3 +1,4 @@
+>>> matrix_mul = __import__('100-matrix_mul').matrix_mul
 >>> matrix_mul([["e", 2], [3, 4]], [[1, 2], [3, 4]])
 m_a should contain only integers or floats or m_b should contain only integers or floats
 >>> matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
