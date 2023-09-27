@@ -23,21 +23,21 @@ def matrix_mul(m_a, m_b):
             if not isinstance(matrix, list):
                 raise TypeError("m_a must be a list or m_b must be a list")
             if not all(isinstance(row, list) for row in matrix):
-                raise TypeError("m_a must be a list of lists or m_b must
-                                be a list of lists")
+                raise TypeError("m_a must be a list of lists or m_b must"
+                                " be a list of lists")
             if not matrix or not all(matrix):
-                raise ValueError("m_a can't be empty or m_b can't be
-                                 empty")
+                raise ValueError("m_a can't be empty or m_b can't be"
+                                 " empty")
             row_size = len(matrix[0])
             if not all(len(row) == row_size for row in matrix):
-                raise TypeError("Each row of m_a must be of the same
-                                size or each row of m_b must be of the
-                                same size")
+                raise TypeError("Each row of m_a must be of the same"
+                                " size or each row of m_b must be of the"
+                                " same size")
             if not all(isinstance(val, (int, float)) for row in matrix
                        for val in row):
-                raise TypeError("m_a should contain only integers or
-                                floats or m_b should contain only
-                                integers or floats")
+                raise TypeError("m_a should contain only integers or"
+                                " floats or m_b should contain only"
+                                " integers or floats")
 
         validate_matrix(m_a)
         validate_matrix(m_b)
