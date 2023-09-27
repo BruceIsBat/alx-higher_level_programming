@@ -1,0 +1,16 @@
+>>> matrix_mul([["e", 2], [3, 4]], [[1, 2], [3, 4]])
+m_a should contain only integers or floats or m_b should contain only integers or floats
+>>> matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
+[[7, 10], [15, 22]]
+>>> matrix_mul([[1, 2, 3]], [[3, 4], [5, 6]])
+m_a and m_b can't be multiplied
+>>> matrix_mul([[2], [3, 4]], [[1, 2], [3, 4]])
+Each row of m_a must be of the same size or each row of m_b must be of the same size
+>>> matrix_mul([1, 2], [[3, 4], [5, 6]])
+m_a must be a list of lists or m_b must be a list of lists
+>>> matrix_mul((1, 2), [[3, 4], [5, 6]])
+m_a must be a list or m_b must be a list
+>>> matrix_mul([[]], [[3, 4], [5, 6]])
+m_a can't be empty or m_b can't be empty
+>>> matrix_mul([[1, 2]], [[3, 4], [5, 6]])
+[[13, 16]]
