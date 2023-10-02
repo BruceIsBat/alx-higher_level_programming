@@ -1,0 +1,14 @@
+# doctests.txt
+
+# Test case 1: Parsing a JSON object
+>>> from_json_string('{"name": "Alice", "age": 25, "city": "Boston"}')
+{'name': 'Alice', 'age': 25, 'city': 'Boston'}
+
+# Test case 2: Parsing a JSON array
+>>> from_json_string('[1, 2, 3, 4, 5]')
+[1, 2, 3, 4, 5]
+
+# Test case 3: Parsing a JSON object with an array value
+>>> from_json_string('{"key": ["value1", "value2"]}')
+{'key': ['value1', 'value2']}
+
