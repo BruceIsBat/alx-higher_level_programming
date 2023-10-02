@@ -1,0 +1,10 @@
+# doctests.txt
+
+# Test case 1: Saving a dictionary to a JSON file
+>>> save_to_json_file({'name': 'Alice', 'age': 25, 'city': 'Boston'}, 'alice.json')
+
+# Test case 2: Saving a list to a JSON file
+>>> save_to_json_file([1, 2, 3, 4, 5], 'numbers.json')
+
+# Test case 3: Saving a dictionary with a list value to a JSON file
+>>> save_to_json_file({'key': ['value1', 'value2']}, 'data.json')
