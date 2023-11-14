@@ -5,7 +5,7 @@ if (argv.length <= 3) {
   console.log('0');
 } else {
   for (let i = 0; i < argv.length; i++) {
-    if (argv[i] > max) {
+    if (argv[i] > max && argv[i] > argv[i + 1]) {
       max = argv[i];
     }
   }
