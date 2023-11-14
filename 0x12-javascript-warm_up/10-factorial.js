@@ -2,7 +2,7 @@
 const { argv } = require('process');
 
 function factorial (num) {
-  if (num === 0 || num === 1) {
+  if (num <= 1 || !Number.isInteger(num)) {
     return 1;
   } else {
     return num * factorial(num - 1);
