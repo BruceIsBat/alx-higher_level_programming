@@ -2,4 +2,4 @@
 class Rectangle {
   // Pass
 }
-export default Rectangle;
+module.exports = Rectangle;
