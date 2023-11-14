@@ -1,4 +1,5 @@
 #!/usr/bin/node
 class Rectangle {
-	// Pass
+  // Pass
 }
+export default Rectangle;
