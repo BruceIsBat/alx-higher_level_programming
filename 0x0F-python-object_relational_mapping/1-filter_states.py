@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-"""Script that lists all states with a name starting with N from the database hbtn_0e_0_usa
+"""Script that lists all states with a name starting with N from the database
+hbtn_0e_0_usa
 """
 import MySQLdb
 import sys
+
 
 def list_states_starting_with_n(username, password, database):
     try:
@@ -19,7 +21,8 @@ def list_states_starting_with_n(username, password, database):
         cursor = db.cursor()
 
         # Execute the SQL query to retrieve states starting with N
-        query = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC"
+        query = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY
+        states.id ASC"
         cursor.execute(query)
 
         # Fetch all the rows
