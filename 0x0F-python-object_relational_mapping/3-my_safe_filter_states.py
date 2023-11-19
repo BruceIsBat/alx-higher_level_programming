@@ -1,12 +1,15 @@
 #!/usr/bin/python3
-"""Script that displays all values in the states table where name matches the provided argument (safe from MySQL injection)
+"""Script that displays all values in the states table where
+name matches the provided argument (safe from MySQL injection)
 """
 import MySQLdb
 import sys
 
+
 def search_states(username, password, database, search_name):
     """
-    Search for states in the specified database whose names match the provided search term (safe from MySQL injection).
+    Search for states in the specified database whose names match the
+    provided search term (safe from MySQL injection).
 
     Args:
         username (str): MySQL username
