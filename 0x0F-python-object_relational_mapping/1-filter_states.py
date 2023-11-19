@@ -7,6 +7,13 @@ import sys
 
 
 def list_states_starting_with_n(username, password, database):
+    """function list the states starting with N
+
+    Arg:
+        username: username 
+        password: password
+        database: database
+    """
     try:
         # Connect to MySQL server
         db = MySQLdb.connect(
