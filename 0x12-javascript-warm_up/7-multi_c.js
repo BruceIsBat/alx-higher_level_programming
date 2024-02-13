@@ -5,6 +5,7 @@ if (argv[2] > 0) {
     console.log('C is fun');
   }
 } else if (argv[2] < 0) {
+	return null
 } else {
   console.log('Missing number of occurrences');
 }
