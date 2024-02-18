@@ -3,6 +3,8 @@
 """
 import MySQLdb
 import sys
+
+
 try:
     db = MySQLdb._mysql.connect(host="localhost",
                                 port=3306,
